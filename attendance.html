@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>attendance</title>
+        <style>
+            input[type="checkbox"]{
+            width: 30px; 
+            height: 30px; 
+            color:darkslateblue;
+            }
+            #a{
+                font-size: 20px;
+                color:darkslateblue;
+                border-radius: 10px;
+                margin-left: 200px;
+            }
+            h1{
+                text-align: center;
+                color:crimson;
+            }
+            th{
+                color:black;
+            }
+            table{
+                text-align: center;
+            }
+            #head{
+                background: coral;
+            }
+            .row {
+                    display: flex;
+                }
+
+            .column {
+                    flex: 50%;
+                    padding: 5px;
+                    }
+            #h{
+                font-size: 2em;
+                text-align: center;
+                padding: 1em;
+            }
+            #h:hover{
+                color: blueviolet;
+            }
+            </style>
+        </head>
+        <body background="f.jpg" style="background-size: cover;">
+            <div id="head" class="row">
+                <di class="column"> <img src="pic/upasthitlogo.png"> </di>
+                <div class="column" id="h"><a href="" id="">Dashboard</a></div>
+            </div>
+            <div>
+            <h1><u>Get ready for today's attendance</u></h1><br><br>
+            <table cellspacing="1" cellpadding="10" border="5" id="a">
+                <thead>
+                    <th>S.No.</th>
+                    <th>Attendance %</th>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Tick if present</th>
+                </thead>
+                <tr>
+                    <td>1</td>
+                    <td>0%</td>
+                    <td>2018kucp1054</td>
+                    <td>Ashish</td>
+                    <td><input type="checkbox">P</td>
+                </tr>
+            </table>
+        </div>
+        </body>
+    </html>

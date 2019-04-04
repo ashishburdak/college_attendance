@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Upasthit
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="pic/title.png">
+        <style>
+            .row {
+                    display: flex;
+                }
+
+            .column {
+                    flex: 50%;
+                    padding: 5px;
+                    }
+
+            #symbol:hover{
+                box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+                }
+
+            #font{
+                text-align: center;
+                font-size: 2em;
+                font: bold;
+            }
+
+            #bord{
+                border-style: solid;
+                border-width: .6em;
+                border-color: rgba(253, 130, 16, 0.788)
+            }
+            body{
+                height: 100%;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-image: url(pic/clock.jpg);
+                background-color: rgba(255,255,255,0.5);
+                background-blend-mode: lighten;
+            }
+            #a{
+                background-color:white;
+                margin-left: 10em;
+                margin-right: 10em;
+                margin-bottom: 2em;
+                box-shadow: 2em;
+                text-align: center;
+                border-radius: 20px;
+                border-style: outset;
+            }
+            #b{
+                background-color:white;
+                margin-left: 10em;
+                margin-right: 10em;
+                margin-bottom: 2em;
+                border-radius: 20px;
+                border-style: outset;
+                font-size: 20px;
+            }
+            #si{
+                font:bold;
+                font-size: 2em;
+                text-align: center;
+            }
+
+            .u{
+                color:rgba(128, 128, 128, 0.781);
+                font-size: 20px;
+            }
+            #hl{
+                text-align: left;
+            }
+            #hr{
+                text-align: right;
+            }
+            #btn{
+                border-radius: 50px;
+                background-color: rgb(255, 123, 0);
+                color:white;
+                border: none;
+                padding: 15px 64px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+            }
+            .in{
+                height: 20px;
+                width: 12em;
+                font-size: 15px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="bord">
+        <img src="pic/college-name.png" height="120" width="1210" style="margin-left:10px;margin-top:10px;">
+        <div class="row">
+            <div class="column"> 
+                    <img src="pic/Upasthitlogo.png">
+            </div>
+            <div class="column">
+                
+            </div>
+        </div> 
+        <div class="row">
+            <div class="column", id="a"> 
+                    <p id="si">Sign In</p>
+                    <p class="u">Username</p>
+                    <input type="text" class="in"><br>
+                    <p class="u">Password</p>
+                    <input type="password" class="in"><br><br>
+                    <button id="btn">Submit</button><br><br>
+                    <a href="teacher-signup.html" id="hl">Sign Up</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="" id="hr">Forget Password?</a><br>
+            </div>
+            <div class="column" id="b"><br><br>
+                    Year - <br><br>&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="p" style="font-size: 125%;">Ist year &nbsp;&nbsp;&nbsp;<input type="radio" name="p">
+                    IInd year <br>&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="p">IIIrd year <input type="radio" name="p">IVth year<br> <br>
+                    Date - <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="date" style="width:13em;height:2em"><br><br>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="button" value="Take Attendance" onclick="location.href='attendance.html'"id="btn" style="padding: 15px 32px;">
+            </div>
+        </div> 
+    </div>
+    </body>
+</html>

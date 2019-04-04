@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Upashit-login
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="pic/title.png">
+        <style>
+            body{
+                background-image: url(pic/bg.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            #a{
+                color:white;
+                font-size: 25px;
+            }
+            .b{
+                margin-left:15em;
+                margin-right:15em;
+            }
+            #btn{
+                border-radius: 50px;
+                background-color: rgba(255, 123, 0, 0.945);
+                color:white;
+                border: none;
+                padding: 15px 64px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+            }
+            .row {
+                    display: flex;
+                }
+
+            .column {
+                    flex: 50%;
+                    padding: 10px;
+                    }
+        input[type="radio"]{
+            width: 15px; 
+            height: 15px; 
+            }
+        </style>
+    </head>
+    <body >
+        <div class="b">
+            <img src="pic/signup.png" style="height: 150px;width: 150px;margin-left: 18em; margin-top: 2em;border-radius: 50%">
+            <form id="a">
+            <div class="row">
+                <br>
+               <div class="column"> Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" style="margin-left:60px"></div>
+               <div class="column">Gender&nbsp;<input type="radio" name ="p" style="margin-left:60px">Male  <input type="radio" name ="p">Female</div>
+            </div>
+            <div class="row">
+                <div class="column">Date of Birth <input type="date" style="margin-left:18px; width: 12em;"></div>
+                <div class="column">Contact No. <input type="number" maxlength="10" style="margin-left:23px"></div>
+            </div>
+            <div class="row">
+                <div class="column">e-mail id &nbsp;&nbsp;&nbsp;<input type="email"  style="margin-left:40px"></div>
+            </div>
+            <div class="row">
+                <div class="column">Username &nbsp;<input type="text" style="margin-left:40px"></div>
+                <div class="column">Password &nbsp;<input type="password" style="margin-left:40px"></div>
+            </div>
+            <div class="row">
+                <div class="column" style="margin-left: 3em;"><button id="btn">Submit</button></div>
+                <div class="column"><button id="btn">Reset</button></div>
+            </div>
+            </form>
+        </div>
+    </body>
+</html>
